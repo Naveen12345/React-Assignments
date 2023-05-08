@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display : flex;
+            flex-direction : row;
+            flex-wrap: wrap;   
+            height: 547px;
+            width: 900px;
+            border: 1px solid black;
+           justify-content: center;
+           margin : auto auto;
+        }
+        div > div{
+            border : 1px solid black;
+        }
+        #c3 {
+            background-color: cornsilk;
+
+        }
+        #c2 {
+            background-color: chocolate;
+
+        }
+        #c2 ,#c3{
+            height :100px; 
+
+        }
+        #c1, #c10 {
+            background-color: chartreuse;
+            height : 100.2px;
+            width :900px;
+        }
+        #c2, #c3 {
+            width :448.4px
+        }
+        #c4, #c5, #c6, #c7, #c8, #c9{
+            height: 120px;
+            width :298.4px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="c1" class="child">Header</div>
+        <div id="c2" class="child">Main banner</div>
+        <div id="c3" class="child">Contact form</div>
+        <div id="c4" class="child">First Post</div>
+        <div id="c5" class="child">Second post</div>
+        <div id="c6" class="child">Third post</div>
+        <div id="c7" class="child">Fourth post</div>
+        <div id="c8" class="child">Fifth post</div>
+        <div id="c9" class="child">Sixth post</div>
+        <div id="c10" class="child">Footer</div>
+    </div>
+</body>
+</html>
