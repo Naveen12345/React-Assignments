@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBlog</title>
+    <style>
+        *{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+}
+.parent{
+
+    margin : auto auto;
+    border : 1px solid black;
+    height : 1150px;
+    width : 800px;
+    display : flex;
+    flex-direction : column;
+    flex-wrap : wrap;
+}
+div > nav {
+    background-color: rgb(10, 10, 10);
+    height : 160px;
+}
+nav ul  {     
+    text-align: right;
+  }
+nav ul li {
+    margin-top: 10px; 
+    display: inline-block;
+  }
+div > nav {
+  list-style-type: none;
+  margin : 0;
+  padding : 0;
+  
+}
+nav ul li a{
+color : white;
+display : block;
+padding : 10px;
+}
+h2{
+    color: blanchedalmond;
+    margin: auto auto;
+}
+#c2{
+    display : flex;
+    flex-direction : column;
+    height: 130px;
+    width :100%;
+    background-color: rgb(218, 208, 208);
+    text-align : center;
+    align-items : center;
+    justify-content : center;
+}
+#c2 > h2{
+    display : flex;
+    color: black;
+    text-align : center;
+    align-items : center;
+    justify-content : center;
+    
+}
+#c3{
+    display : flex;
+    
+    text-align : center;
+    align-items : center;
+    justify-content : center;
+    flex-wrap: wrap;
+    height: 400px;
+    width :100%;
+    background-color: rgb(240, 232, 232);
+
+}
+#c3-1,#c3-2,#c3-3,#c3-4,#c3-5,#c3-6{
+    height: 50%;
+    width :33.3%;
+    border : 1px solid black;
+    background-color: rgb(240, 232, 232);
+
+}
+#c4{
+    display : flex;
+    flex-direction : column;
+    height: 350px;
+    width :100%;
+    background-color: rgb(218, 208, 208);
+    text-align : center;
+    align-items : center;
+    justify-content : center;
+}
+div>nav h2{
+    display : inline-block;
+    margin : 40px 0 0 10px;
+}
+footer{
+    display : flex;
+    height: 108.4px;
+    width:100%;
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+footer>ul li{
+    display: inline-block;
+ 
+}
+
+footer ul li a{
+   
+    color :rgb(218, 208, 208);
+}
+@media screen and (max-width: 3000px) {
+    .parent{
+        height : 155vh;
+        display : flex;
+        border: 1px solid black;
+        text-align : center;
+        justify-content : center;
+        flex-wrap: wrap;
+        width :98%;
+        background-color: rgb(240, 232, 232);
+    }
+    nav{
+        margin-top: 1rem;
+        height:25%;
+        width: 100%;
+    }
+    footer{
+        height:100px;
+        width: 100%;
+    }
+
+}
+@media screen and (max-height: 3000px) {
+    .parent{
+        height : 100%;
+        display : flex;
+        border: 1px solid black;
+        text-align : center;
+        justify-content : center;
+        flex-wrap: wrap;
+        width :98%;
+        background-color: rgb(240, 232, 232);
+    }
+    .flex-main{
+        height:30%;
+        width:100%;
+    }
+    nav{
+        margin-top: 1rem;
+        height:10%;
+        width: 100%;
+    }
+    footer{
+        height:250%;
+        width: 100%;
+    }
+
+}
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <nav class="flex-item">
+          <h2 style="color:white">FlexBlog</h2>
+          <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+    <div id="c2" class="flex-item">
+        <h1>Flexblog Gems</h2>
+        <h4>Learn everything about Flexbox</h5>  
+    </div>
+    <div id="c3" class="flex-main">
+        <div id="c3-1" class="flex-item">
+            <img src="C:\Users\naveen\Downloads\WhatsApp Image 2023-05-11 at 7.59.53 PM.jpeg" alt="image" height="200"width="100">
+            <h3><b>First Post</b></h3>
+            <p>This is an example post</p>
+        </div>
+        <div id="c3-2" class="flex-item">
+            <img src="C:\Users\naveen\Downloads\WhatsApp Image 2023-05-11 at 7.59.53 PM.jpeg" alt="image" height="200"width="100">
+            <h3><b>Second Post</b></h3>
+            <p>This is an example post</p>
+        </div>
+        <div id="c3-3" class="flex-item">
+            <img src="C:\Users\naveen\Downloads\WhatsApp Image 2023-05-11 at 7.59.53 PM.jpeg" alt="image" height="200"width="100">
+            <h3><b>Third Post</b></h3>
+            <p>This is an example post</p>
+        </div>
+        <div id="c3-4" class="flex-item">
+            <img src="C:\Users\naveen\Downloads\WhatsApp Image 2023-05-11 at 7.59.53 PM.jpeg" alt="image" height="200"width="100">
+            <h3><b>Fourth Post</b></h3>
+            <p>This is an example post</p>
+        </div>
+        <div id="c3-5" class="flex-item">
+            <img src="C:\Users\naveen\Downloads\WhatsApp Image 2023-05-11 at 7.59.53 PM.jpeg" alt="image" height="200"width="100">
+            <h3><b>Fifth Post</b></h3>
+            <p>This is an example post</p>
+        </div>
+        <div id="c3-6" class="flex-item">
+            <img src="C:\Users\naveen\Downloads\WhatsApp Image 2023-05-11 at 7.59.53 PM.jpeg" alt="image" height="200"width="100">
+            <h3><b>sixth Post</b></h3>
+            <p>This is an example post</p>
+        </div>
+    </div>
+    <div id="c4" class="flex-main"> 
+    <form onsubmit="sendEmail(event)">
+    Name
+    <input type="text" id="Name"><br>
+    Email
+    <input type="email" id="email"><br>
+    Message
+    <textarea name="" id="" cols="30" rows="8" id="message"></textarea><br>
+    <button type="submit">Send Email</button>
+    </form>
+    </div>
+    <footer class="flex-item">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </footer>
+    </div>
+    <script>
+        function sendEmail(event) {
+            event.preventDefault(); 
+            
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            
+            var subject = "New message from website";
+            var body = message;
+            
+            var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            
+            window.location.href = mailtoLink; // Open the user's email client with the email populated
+          }
+          
+    </script>
+    
+</body>
+</html>
